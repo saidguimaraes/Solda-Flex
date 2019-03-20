@@ -1,0 +1,20 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\Cpu_robot_soldagem.o
+Folder=Intermediary
+[File001]
+Location=Cpu_robot_soldagem.HEX
+Folder=Output
+[File002]
+Location=Cpu_robot_soldagem.LST
+Folder=Output
+[File003]
+Location=Cpu_robot_soldagem.ERR
+Folder=Output
+[File004]
+Location=Cpu_robot_soldagem.COF
+Folder=Output
+[TOOL_LOC_STAMPS]
+tool_loc{0C155615-B197-4A4B-AEB6-343BB3F41A35}=C:\Program Files (x86)\PICC\Ccsc.exe

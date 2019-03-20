@@ -1,0 +1,16 @@
+[PROJECT]
+Target=build\default\production\_ext\1472\main.hex
+Processor_Text=PIC18F4620
+CCSVersion=5.007
+Compiler=PCH
+[Target Data]
+FileList=build\default\production\_ext\1472\main.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\;C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\;C:\Users\ICTS-0101\Desktop\software solda\Maquina 1\
+[build\default\production\_ext\1472\main.c]
+Type=4
+[mru-list]
+1=build\default\production\_ext\1472\main.c
+[Units]
+Count=1
+1=..\main (main)

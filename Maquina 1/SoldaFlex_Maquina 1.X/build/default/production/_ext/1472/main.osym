@@ -1,0 +1,131 @@
+_RETURN_
+CCP_1
+CCP_1_LOW
+CCP_1_HIGH
+CCP_2
+CCP_2_LOW
+CCP_2_HIGH
+PSP_DATA
+C1OUT
+C2OUT
+pe
+pl
+ql
+pas
+qas
+pat
+qat
+_Randseed
+menu_atual
+entradas
+n_maquina
+TEM_PLACA
+trata_timer_zero_modo
+contador_tempo
+tempo
+first_time
+programa
+estouro_timer1
+estouro_timer3
+estouro_timer0
+dado
+valor
+velocidade_x
+velocidade_y
+velocidade_flip
+velocidade_z
+contador_step_x_inicial
+contador_step_y_inicial
+contador_step_flip_inicial
+contador_step_z_inicial
+contador_rampa_subida_x
+contador_rampa_descida_x
+contador_rampa_subida_y
+contador_rampa_descida_y
+contador_rampa_subida_flip
+contador_rampa_descida_flip
+contador_rampa_subida_z
+contador_rampa_descida_z
+run_ok
+passo
+ack
+lcdcoluna
+lcdlinha
+buffer_saida
+contador_step_x
+contador_step_y
+contador_step_flip
+contador_step_z
+direita_flag
+esquerda_flag
+frente_flag
+atras_flag
+sobe_flag
+desce_flag
+sentido_horario_flag
+sentido_antihorario_flag
+posicao_maq
+n_posicao
+n_bit
+M1_posicao_x
+M1_posicao_y
+M1_posicao_z
+M1_TE_1
+M1_TS_1
+M1_TE_2
+placas_feitas
+testando
+step
+i
+erro
+
+Project Directory:
+    C:\Users\ictsam0100\Desktop\Maquina 1\SoldaFlex_Maquina 1.X\
+
+Project Files:
+    ..\main.c                                               [07-dez-18 15:12  CRC=83D00900]
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\18F4620.h [21-jun-13 16:05  CRC=ACF82922]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h [14-jul-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h [16-jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h [03-jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h [31-jul-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\math.h  [28-set-12 11:35  CRC=546412C9]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h [08-jun-11 14:39  CRC=0B6669CF]
+    ..\main.h                                               [07-dez-18 15:00  CRC=2D5A29CC]
+    ..\pcf8574.c                                            [26-nov-18 13:17  CRC=F7578053]
+    ..\pca9555.c                                            [26-nov-18 13:18  CRC=B5761874]
+    ..\display_maq.c                                        [26-nov-18 13:21  CRC=6E9C2679]
+    ..\24c64.c                                              [26-nov-18 13:21  CRC=9E94368B]
+    ..\teclado_21_teclas.c                                  [26-nov-18 13:26  CRC=DD6BB573]
+    ..\stepper_motor.c                                      [26-nov-18 13:14  CRC=DB67473B]
+    ..\I_O.c                                                [26-nov-18 13:26  CRC=2BCA0F37]
+    ..\comunicacao_entre_maquinas.c                         [07-dez-18 11:46  CRC=95A71D95]
+    ..\comunicacao_entre_maquinas.h                         [06-dez-18 11:25  CRC=F799B5DC]
+    ..\telas_maquina_1.c                                    [07-dez-18 15:12  CRC=CF705381]
+    ..\telas_maquina_1.h                                    [07-dez-18 15:12  CRC=E72D52DE]
+    ..\movimentos_maq_1.c                                   [26-nov-18 15:51  CRC=66AC238D]
+    ..\Modelo1_maq_1.c                                      [14-nov-18 14:47  CRC=777E18F0]
+    ..\maquinas_maq_1.c                                     [07-dez-18 12:09  CRC=C7F732E3]
+
+Source signature=374E05D7
+
+Units:
+    ..\main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4620
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Output file:    Relocatable
+    Predefined symbols:
+       #define __18F4620 1
+
+Output Files:
+    XREF file:   build\default\production\_ext\1472\main.xsym
+    Errors:      build\default\production\_ext\1472\main.err
+    Ext Symbols: build\default\production\_ext\1472\main.esym
+    Object:      build\default\production\_ext\1472\main.o
+    Symbols:     build\default\production\_ext\1472\main.osym

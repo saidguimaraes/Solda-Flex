@@ -1,0 +1,16 @@
+[PROJECT]
+Target=Cpu_robot_soldagem.hex
+Processor_Text=PIC18F4620
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=Cpu_robot_soldagem.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[Cpu_Robot_Soldagem.c]
+Type=4
+[mru-list]
+1=Cpu_robot_soldagem.c
+[Units]
+Count=1
+1=Cpu_robot_soldagem (main)

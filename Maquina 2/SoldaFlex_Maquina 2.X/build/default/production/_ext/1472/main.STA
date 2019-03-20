@@ -1,0 +1,446 @@
+
+ROM used:   55634/32768 (85%)
+            55634/32768 (85%) including unused fragments
+
+            5.8 Average locations per line
+            13.8 Average locations per statement
+
+RAM used:   1405/3968 (35%) at main() level
+            1451/3968 (37%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  165    92   2  ..\main.c
+  823     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4620.h
+  423     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h
+ 2229   257   6  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\math.h
+ 1351   359   9  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   68     0   0  ..\main.h
+   33    17   0  ..\pcf8574.c
+   26    18   0  ..\pca9555.c
+   80    55   1  ..\display_maq.c
+   72    46   1  ..\24c64.c
+   99    67   2  ..\teclado_21_teclas.c
+  142    72   2  ..\stepper_motor.c
+  182    78   2  ..\I_O.c
+  101    56   1  ..\comunicacao_entre_maquinas.c
+   15     0   0  ..\comunicacao_entre_maquinas.h
+  287   205   5  ..\telas_maquina_2.c
+   57     0   0  ..\telas_maquina_2.h
+  245   148   4  ..\Axis_x.c
+  256   159   4  ..\Axis_y.c
+  254   161   4  ..\Axis_z.c
+  253   161   4  ..\Axis_flip.c
+  455   452  11  ..\movimentos_maq_2.c
+  413   393  10  ..\maquinas_maq_2.c
+   59    40   1  ..\Modelos_maq_2.c
+ 1434  1187  30  ..\att_telas_2.c
+   22     0   0  ..\att_telas_2.h
+----- -----
+ 9641  4023 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     54   0    2             @ITOF
+0    246   0   11             @MULFF
+0    632   1   16             @ADDFF
+0    350   0   14             @DIVFF
+0     92   0   14             @MUL3232
+0     34   0    5             @MUL1616
+0     40   0    1             @delay_ms1
+0     28   0    1             @I2C_WRITEU_1
+0     28   0    1             @I2C_READU_1
+0     54   0    3   163  3.8  escreve_pcf8574
+0     54   0    3   172  3.8  le_pcf8574A
+0     82   0    5   267  4.2  escreve_PCA9555
+0    136   0    6   466  5.1  le_PCA9555
+0     62   0    1   154  1.8  write
+0     12   0    1    42  1.1  displayprog
+0     22   0    0    37  1.1  limpa_display
+0    102   0    0   267  2.3  inicializa_display
+0     84   0    3   499  5.0  posiciona_cursor
+0     12   0    1    42  1.1  display
+0     84   0    1   275  5.0  lcd_putc
+0    108   0    6   300  3.5  write_ext_eeprom
+0    108   0    6   328  3.5  read_ext_eeprom
+0    166   0    2   572  3.4  init_ext_eeprom
+0     18   0    0             @const1121
+0     32   0    2             @PSTRINGC_1103
+0     18   0    0             @const1123
+0     18   0    0             @const1124
+0     18   0    0             @const1125
+0     44   0    0    94  1.7  Init_Keyboard
+0    150   0    8   543  9.4  Get_Key
+0    578   1    3  1517  5.9  Teclado
+0     10   0    0    56  1.6  direita
+0     10   0    0    56  1.6  esquerda
+0     14   0    0    56  1.6  frente
+0     14   0    0    56  1.6  atras
+0     14   0    0    56  1.6  sentido_antihorario
+0     14   0    0    56  1.6  sentido_horario
+0     14   0    0    56  1.6  sobe
+0     14   0    0    56  1.6  desce
+0     56   0    1   160  3.9  one_step_x
+0     52   0    1   160  3.9  one_step_y
+0     58   0    1   160  3.9  one_step_flip
+0     52   0    1   160  3.9  one_step_z
+0      8   0    0    21  0.9  chopper_x
+0      6   0    0    21  0.9  chopper_y
+0      8   0    0    21  0.9  chopper_flip
+0      8   0    0    21  0.9  chopper_z
+0      8   0    0    21  0.9  stop_x
+0      6   0    0    21  0.9  stop_y
+0      8   0    0    44  0.1  stop_z
+0    528   0    6  2270  9.1  le_Input
+0     44   0    0             @goto12688
+0     76   0    4   207  2.5  aciona_saida
+0     66   0    4   207  2.5  desaciona_saida
+0     40   0    2   183  2.4  desaciona_todas_saidas
+0     22   0    0    47  1.5  Init_Sensores_porta1
+0     22   0    0    47  1.5  Init_saidas
+0    134   0    3   200  3.3  le_bit
+0     66   0    6             @WRITEBITA
+0     50   0    5             @READBITA
+0    220   0    3   834  4.5  le_posicao_outra_maquina
+0    102   0    1   568  2.1  envia_posicao_para_outra_maquina
+0     48   0    0             @goto12789
+0     54   0    0   141  1.8  tela_apresentacao
+0     24   0    0             @const1241
+0     32   0    2             @PSTRINGC_1105
+0     24   0    0             @const1243
+0     24   0    0             @const1244
+0     24   0    0             @const1245
+0     34   0    0    78  1.6  tela_iniciando_maquina
+0     22   0    0             @const1247
+0     22   0    0             @const1248
+0    284   0    1   964  3.8  tela_movimentando_maquina
+0     24   0    0             @const1250
+0     24   0    0             @const1251
+0     24   0    0             @const1252
+0     24   0    0             @const1254
+0     24   0    0             @const1255
+0     24   0    0             @const1256
+0     24   0    0             @const1258
+0     24   0    0             @const1259
+0     22   0    0             @const1260
+0     24   0    0             @const1262
+0     24   0    0             @const1263
+0     24   0    0             @const1264
+0     24   0    0             @const1266
+0     24   0    0             @const1267
+0     24   0    0             @const1268
+0     48   0    0             @goto12922
+0     50   0    0   115  1.7  tela_esperando_mov_maquina
+0     24   0    0             @const1271
+0     24   0    0             @const1272
+0     24   0    0             @const1273
+0     24   0    0             @const1275
+0     24   0    0             @const1276
+0     24   0    0             @const1277
+0     24   0    0             @const1278
+0     24   0    0             @const1280
+0     24   0    0             @const1281
+0     24   0    0             @const1282
+0     24   0    0             @const1283
+0     24   0    0             @const1285
+0     24   0    0             @const1286
+0     24   0    0             @const1287
+0     24   0    0             @const1288
+0     24   0    0             @const1290
+0     24   0    0             @const1291
+0     24   0    0             @const1292
+0     24   0    0             @const1293
+0     24   0    0             @const1295
+0     24   0    0             @const1296
+0     24   0    0             @const1297
+0     24   0    0             @const1298
+0     62   0    0   147  1.8  tela_esperando_sair_posicao_outra_maquina
+0     24   0    0             @const1301
+0     24   0    0             @const1302
+0     24   0    0             @const1303
+0     24   0    0             @const1304
+0    100   0    0   152  1.8  tela_principal
+0     24   0    0             @const1306
+0     24   0    0             @const1307
+0     42   0    3             @PSTRINGCN_1105
+0     44   0    3             @DIV88
+0    130   0    2             @PRINTF_U_1105
+0     24   0    0             @const1316
+0     24   0    0             @const1317
+0     62   0    0   141  1.8  tela_seleciona_maquina
+0     24   0    0             @const1319
+0     24   0    0             @const1320
+0     24   0    0             @const1321
+0     24   0    0             @const1322
+0     62   0    0   141  1.8  tela_manutencao_outra_maquina
+0     24   0    0             @const1324
+0     24   0    0             @const1325
+0     24   0    0             @const1326
+0     24   0    0             @const1327
+0     62   0    0   141  1.8  tela_edita_modelo
+0     24   0    0             @const1329
+0     24   0    0             @const1330
+0     22   0    0             @const1331
+0     22   0    0             @const1332
+0     74   0    0   141  1.8  tela_seleciona_debug
+0     24   0    0             @const1334
+0     24   0    0             @const1335
+0     24   0    0             @const1337
+0     74   0    0   141  1.8  tela_seleciona_debug_2
+0     24   0    0             @const1340
+0     24   0    0             @const1341
+0     24   0    0             @const1343
+0     92   0    0   119  1.7  tela_edita_pontos_no_modelo
+0     24   0    0             @const1345
+0     22   0    0             @const1346
+0    190   0    9             @PRINTF_LU_1105
+0     24   0    0             @const1349
+0     64   0    0   141  1.8  tela_excluir_modelo
+0     24   0    0             @const1351
+0     24   0    0             @const1352
+0     24   0    0             @const1353
+0     22   0    0             @const1354
+0    252   0    1   300  2.3  tela_seleciona_pontos
+0     26   0    0             @const1356
+0     26   0    0             @const1357
+0     26   0    0             @const1358
+0     26   0    0             @const1359
+0    566   1    7   331  2.3  tela_dados_ponto
+0     18   0    0             @const1364
+0     26   0    0             @const1365
+0     26   0    0             @const1366
+0     20   0    0             @const1367
+0    346   0    5   243  2.3  tela_dados_ponto_2
+0     12   0    0             @const1371
+0     20   0    0             @const1372
+0     12   0    0             @const1373
+0     18   0    0             @const1374
+0    284   0    5   219  2.3  tela_dados_ponto_3
+0     20   0    0             @const1379
+0     12   0    0             @const1380
+0     18   0    0             @const1381
+0    284   0    5   219  2.3  tela_dados_ponto_4
+0     12   0    0             @const1385
+0     20   0    0             @const1386
+0     18   0    0             @const1388
+0    222   0    5   195  2.3  tela_dados_ponto_5
+0     20   0    0             @const1393
+0     18   0    0             @const1395
+0     62   0    0   141  1.8  tela_faltaSolda
+0     24   0    0             @const1397
+0     24   0    0             @const1398
+0     24   0    0             @const1399
+0     24   0    0             @const1400
+0     64   0    0   141  1.8  tela_confirmaManutencao
+0     24   0    0             @const1403
+0     24   0    0             @const1404
+0     24   0    0             @const1405
+0     24   0    0             @const1406
+0     62   0    0   141  1.8  tela_seleciona_manutencao
+0     24   0    0             @const1408
+0     24   0    0             @const1409
+0     24   0    0             @const1410
+0     24   0    0             @const1411
+0    494   0    3   364  2.3  tela_debug_entrada_1
+0     30   0    0             @const1413
+0     30   0    0             @const1414
+0     30   0    0             @const1415
+0     24   0    0             @const1416
+0    494   0    3   364  2.3  tela_debug_entrada_2
+0     30   0    0             @const1418
+0     30   0    0             @const1419
+0     30   0    0             @const1420
+0     24   0    0             @const1421
+0    546   0    3   391  2.3  tela_debug_entrada_3
+0     30   0    0             @const1423
+0     30   0    0             @const1424
+0     30   0    0             @const1425
+0     26   0    0             @const1426
+0     90   0    0   212  1.8  tela_debug_saida_1
+0     24   0    0             @const1428
+0     24   0    0             @const1429
+0     24   0    0             @const1430
+0     24   0    0             @const1431
+0     90   0    0   212  1.8  tela_debug_saida_2
+0     24   0    0             @const1434
+0     24   0    0             @const1435
+0     24   0    0             @const1436
+0     24   0    0             @const1437
+0     90   0    0   212  1.8  tela_debug_saida_3
+0     24   0    0             @const1440
+0     24   0    0             @const1441
+0     24   0    0             @const1442
+0     24   0    0             @const1443
+0    266   0    0   197  1.8  tela_debug_saida_4
+0     24   0    0             @const1446
+0     24   0    0             @const1447
+0     22   0    0             @const1448
+0     24   0    0             @const1449
+0    108   0    0   152  1.8  tela_programa_principal
+0     24   0    0             @const1451
+0     24   0    0             @const1452
+0     24   0    0             @const1453
+0     24   0    0             @const1454
+0   1242   1   20   894  6.4  init_axis_x
+0     56   0    4             @DTOF
+0     66   0    5             @FTOSD
+0    486   0    9  1009  9.9  motor_run_x
+0    598   1    5   581  5.7  proximo_valor_subida_x
+0    650   1    5   604  5.7  proximo_valor_descida_x
+0    188   0    0   836  9.1  movimenta_eixo_x
+0   1280   1   20   900  6.4  init_axis_y
+0    490   0    9  1009  9.9  motor_run_y
+0    598   1    5   581  5.7  proximo_valor_subida_y
+0    650   1    5   604  5.7  proximo_valor_descida_y
+0    196   0    0   821  8.7  movimenta_eixo_y
+0   1088   1   12   833  5.9  init_axis_z
+0    496   0    9  1077 10.4  motor_run_z
+0    598   1    5   581  5.7  proximo_valor_subida_z
+0    650   1    5   604  5.7  proximo_valor_descida_z
+0    208   0    0   791  8.6  movimenta_eixo_z
+0   1084   1   12   833  5.9  init_axis_flip
+0    472   0    9  1077 10.4  motor_run_flip
+0    576   1    5   581  5.7  proximo_valor_subida_flip
+0    608   1    5   604  5.7  proximo_valor_descida_flip
+0    204   0    0   791  8.6  movimenta_eixo_flip
+0    240   0    2   834  5.3  flip_home
+0    274   0    2   965  5.3  y_home_frente
+0    274   0    2   965  5.3  y_home_atras
+0    274   0    2   965  5.3  x_home_direita
+0    244   0    2   855  5.3  z_home
+0   1386   1    1  5536  7.4  envia_maquina_para_posicao
+0     48   0    0             @goto14751
+0    198   0    1   700  4.3  posicao_maquina_2_default
+0    130   0    1   412  3.3  posicao_volta_manutencao
+0     16   0    0    21  0.9  liga_pressor
+0     16   0    0    21  0.9  desliga_pressor
+0    170   0    2   380  3.0  empurra_placa
+0    168   0    2   380  3.0  dispensa_placa
+0     82   0    1   204  2.3  desce_ferros
+0     30   0    0    37  1.1  sobe_ferros
+0     16   0    0    21  0.9  liga_esteira
+0     16   0    0    21  0.9  desliga_esteira
+0    152   0    1   250  1.4  home_solenoides
+0     84   0    4   295  4.9  statusSolda
+0   2414   2   16  4819  7.2  ligar_alimentador_solda
+0     44   0    0             @goto15061
+0   1816   2   10  3232  8.9  soldar_teste
+0     24   0    0             @const1685
+0     24   0    0             @const1686
+0     24   0    0             @const1687
+0   1998   2    8  3533 10.4  soldar
+0   1150   1   16  1685  8.4  ler_modelo_memoria
+0   1346   1   10  1891  6.1  escrever_ponto_memoria
+0    116   0    8   228  6.0  excluir_modelo_memoria
+0     68   0    7   112  3.8  escrever_pontos_no_modelo
+0    146   0    0   639  6.5  atualiza_tela_principal
+0     24   0    0             @const1728
+0     24   0    0             @const1730
+0     56   0    0   218  3.5  atualiza_tela_seleciona_maquina
+0     22   0    0    74  2.9  atualiza_tela_manutencao_outra_maquina
+0     58   0    0   218  3.5  atualiza_tela_edita_modelo
+0     46   0    0   195  3.5  atualiza_tela_seleciona_debug
+0    346   0    3  1386  7.6  atualiza_tela_seleciona_debug_2
+0     24   0    0             @const1736
+0     24   0    0             @const1737
+0     24   0    0             @const1739
+0     24   0    0             @const1740
+0    196   0    1   699  6.6  atualiza_tela_edita_pontos_no_modelo
+0     24   0    0             @const1742
+0     22   0    0             @const1744
+0     48   0    0             @goto15483
+0    156   0    1   380  4.1  atualiza_tela_excluir_modelo
+0     24   0    0             @const1747
+0     24   0    0             @const1749
+0    560   1    2  2115 10.3  atualiza_tela_seleciona_pontos
+0     48   0    0             @goto15571
+0   2864   3    5  7886  9.4  atualiza_tela_dados_ponto
+0     24   0    0             @const1753
+0     24   0    0             @const1755
+0     24   0    0             @const1757
+0     24   0    0             @const1758
+0     76   0    0             @goto15770
+0   4084   4    5  8905  8.9  atualiza_tela_dados_ponto_2
+0     24   0    0             @const1763
+0     24   0    0             @const1765
+0     24   0    0             @const1767
+0     24   0    0             @const1768
+0     76   0    0             @goto16016
+0    196   0    2   566  5.6  atualiza_tela_faltaSolda
+0     24   0    0             @const1773
+0     24   0    0             @const1775
+0     24   0    0             @const1776
+0     24   0    0             @const1778
+0     34   0    0   132  3.3  atualiza_tela_confirmaManutencao
+0     48   0    0   195  3.5  atualiza_tela_seleciona_manutencao
+0    124   0    1   423  7.4  atualiza_tela_debug_entrada_1
+0    138   0    1   500  7.5  atualiza_tela_debug_entrada_2
+0    126   0    1   423  7.4  atualiza_tela_debug_entrada_3
+0    306   0    1  1227  6.3  atualiza_tela_debug_saida_1
+0     54   0    0             @goto16188
+0    314   0    1  1350  6.3  atualiza_tela_debug_saida_2
+0     54   0    0             @goto16224
+0    360   0    0  1482  6.3  atualiza_tela_debug_saida_3
+0     54   0    0             @goto16258
+0   1024   1    8  3890  7.8  atualiza_tela_debug_saida_4
+0     74   0    0             @goto16364
+0   1362   1    5  6628  8.5  programa_principal_teste
+0     24   0    0             @const1799
+0     24   0    0             @const1800
+0     24   0    0             @const1802
+0     24   0    0             @const1803
+0     24   0    0             @const1805
+0     24   0    0             @const1806
+0     24   0    0             @const1808
+0     24   0    0             @const1809
+0     24   0    0             @const1811
+0     24   0    0             @const1812
+0     24   0    0             @const1814
+0     24   0    0             @const1815
+0     24   0    0             @const1817
+0     24   0    0             @const1818
+0     24   0    0             @const1820
+0     24   0    0             @const1821
+0     24   0    0             @const1823
+0     24   0    0             @const1824
+0     24   0    0             @const1826
+0     24   0    0             @const1827
+0     24   0    0             @const1829
+0     24   0    0             @const1830
+0     66   0    0             @goto16583
+0      8   0    0    16  1.0  trata_timer0
+0      8   0    0    16  1.0  trata_timer1
+0     24   0    0    33  1.3  trata_timer2
+0     16   0    0    50  2.0  trata_timer3
+0   1194   1    8  2196  5.9  MAIN
+0    150   0   13             @DIV3232
+0     80   0    0             @goto16691
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               147
+    Statements              4023
+    Comments                1241
+    Volume (V)              202477
+    Difficulty (D)          581.5
+    Effort to implement (E) 117744031
+    Time to implement (T)   1817 hours, 2 minutes
+    Est Delivered Bugs (B)  80
+    Cyclomatic Complexity   551
+    Maintainability (MI)    30
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B8   178  0  
+000BA-0FFFE  55452  9898  
+
+
+

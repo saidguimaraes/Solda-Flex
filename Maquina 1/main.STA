@@ -1,0 +1,570 @@
+
+ROM used:   46724/65536 (71%)
+            46724/65536 (71%) including unused fragments
+
+            3.4 Average locations per line
+            10.3 Average locations per statement
+
+RAM used:   392/3968 (10%) at main() level
+            548/3968 (14%) worst case
+
+Stack used: 20 worst case (16 in main + 4 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  524   232   5  main.c
+  839     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4620.h
+  423     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h
+ 2229   257   6  ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\math.h
+ 1351   359   8  ..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+  166     0   0  main.h
+   49    23   1  pcf8574.c
+   43    22   0  pca9555.c
+  122    55   1  display.c
+   79    46   1  24c64.c
+  167    67   1  teclado_21_teclas.c
+  349    82   2  stepper_motor.c
+  219    69   2  I_O.c
+ 1891   828  18  movimentos.c
+ 1332   718  16  manutencao.c
+ 1412   699  15  menus_solda_automatica.c
+ 2289  1072  24  maquinas.c
+----- -----
+13581  4529 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     84   0    6             @MULS1616
+0     70   0    5             @DIV1616
+0     34   0    5             @MUL1616
+0     40   0    1             @delay_ms1
+0     32   0    1             @delay_us1
+0     28   0    1             @I2C_WRITEU_1
+0     28   0    1             @I2C_READU_1
+0     80   0    3   211  4.3  escreve_pcf8574
+0     66   0    3   221  4.3  le_pcf8574A
+0     82   0    5   320  4.7  escreve_PCA9555
+0    166   0    6   524  5.6  le_PCA9555
+0     62   0    1   154  1.8  write
+0     12   0    1    42  1.1  displayprog
+0     22   0    0    37  1.1  limpa_display
+0    102   0    0   267  2.3  inicializa_display
+0     84   0    3   499  5.0  posiciona_cursor
+0     12   0    1    42  1.1  display
+0     84   0    1   275  5.0  lcd_putc
+0    156   0    5   295  3.4  write_ext_eeprom
+0    150   0    5   323  3.4  read_ext_eeprom
+0    164   0    2   572  3.4  init_ext_eeprom
+0     18   0    0             @const1191
+0     32   0    2             @PSTRINGC_1173
+0     18   0    0             @const1193
+0     18   0    0             @const1194
+0     18   0    0             @const1195
+0     68   0    0    94  1.7  Init_Keyboard
+0    160   0    8   543  9.4  Get_Key
+0    578   1    3  1517  5.9  Teclado
+0     40   0    1   118  1.3  espera_desacionar_teclas
+0     52   0    1   156  3.9  one_step_x
+0     52   0    1   156  3.9  one_step_y
+0     54   0    1   156  3.9  one_step_y_negativo
+0     52   0    1   156  3.9  one_step_flip
+0     52   0    1   156  3.9  one_step_z
+0     14   0    0    56  1.6  direita
+0     14   0    0    56  1.6  esquerda
+0     14   0    0    56  1.6  frente
+0     14   0    0    56  1.6  atras
+0     14   0    0    56  1.6  sentido_horario
+0     14   0    0    56  1.6  sobe
+0     14   0    0    56  1.6  desce
+0     14   0    0    56  1.6  sentido_antihorario
+0      6   0    0    21  0.9  chopper_x
+0      6   0    0    21  0.9  chopper_y
+0      6   0    0    21  0.9  chopper_flip
+0      6   0    0    21  0.9  chopper_z
+0      6   0    0    21  0.9  stop_x
+0      6   0    0    21  0.9  stop_y
+0      8   0    0    21  0.9  stop_flip
+0      6   0    0    44  0.1  stop_z
+0    522   1    6  2206  9.1  le_Input
+0     44   0    0             @goto12778
+0     86   0    4   207  2.5  aciona_saida
+0     66   0    4   207  2.5  desaciona_saida
+0     48   0    2   183  2.4  desaciona_todas_saidas
+0     34   0    0    47  1.5  Init_Sensores_porta1
+0     34   0    0    47  1.5  Init_saidas
+0     72   0    3   209  4.7  go_x
+0    138   0    5   248  5.0  go_z
+0    386   0   15  1071  8.3  rampa_xx
+0    386   0   15  1071  8.3  rampa_yy
+0    394   0   15  1071  8.3  rampa__flip
+0    568   1   23  2880  8.5  go_x_y
+0    570   1   23  2880  8.5  go_x_y_negativo
+0    838   1   29  4462  8.4  go_x_y_flip
+0    432   0    3  1691  5.9  fliP_home
+0    272   0    2   965  5.3  x_home_esquerda
+0    278   0    2   965  5.3  y_home_frente
+0    272   0    2   965  5.3  y_home_atras
+0    280   0    2   965  5.3  x_home_direita
+0    242   0    2   855  5.3  z_home
+0    676   1    2  2151  6.8  Debug_eixo_XY
+0     24   0    0             @const1388
+0     32   0    2             @PSTRINGC_1175
+0     24   0    0             @const1390
+0     24   0    0             @const1391
+0    198   0    9             @PRINTF_LU_1175
+0    382   0    2  1301  6.7  Debug_eixo_flip
+0     24   0    0             @const1402
+0     24   0    0             @const1404
+0    412   0    2  1236  6.7  Debug_eixo_z
+0     22   0    0             @const1411
+0     24   0    0             @const1413
+0    356   0    2  1045  6.7  Debug_Empurrador_Entrada
+0     22   0    0             @const1419
+0     24   0    0             @const1420
+0     24   0    0             @const1421
+0     24   0    0             @const1422
+0      4   0    0             @const1423
+0      4   0    0             @const1424
+0      4   0    0             @const1425
+0      4   0    0             @const1426
+0    326   0    2   983  6.7  Debug_Dedos_Entrada
+0     18   0    0             @const1430
+0     24   0    0             @const1432
+0     24   0    0             @const1433
+0      4   0    0             @const1434
+0      4   0    0             @const1435
+0      4   0    0             @const1436
+0      4   0    0             @const1437
+0    254   0    2   731  6.6  Debug_pressor
+0     24   0    0             @const1441
+0     24   0    0             @const1443
+0     24   0    0             @const1444
+0      4   0    0             @const1445
+0      4   0    0             @const1446
+0    364   0    2  1045  6.7  Debug_Empurrador_Saida
+0     22   0    0             @const1450
+0     24   0    0             @const1452
+0     24   0    0             @const1453
+0      4   0    0             @const1454
+0      4   0    0             @const1455
+0      4   0    0             @const1456
+0      4   0    0             @const1457
+0    328   0    2   983  6.7  Debug_Dedos_Saida
+0     24   0    0             @const1461
+0     24   0    0             @const1463
+0     24   0    0             @const1464
+0      4   0    0             @const1465
+0      4   0    0             @const1466
+0      4   0    0             @const1467
+0      4   0    0             @const1468
+0    204   0    1   519  6.0  Debug_Limpador
+0     24   0    0             @const1472
+0     20   0    0             @const1474
+0     20   0    0             @const1475
+0    254   0    2   731  6.6  debug_esteira
+0     24   0    0             @const1479
+0     24   0    0             @const1481
+0     24   0    0             @const1482
+0      4   0    0             @const1483
+0      4   0    0             @const1484
+0    350   0    2   972  6.7  Debug_Alimentador_Solda
+0     24   0    0             @const1488
+0     24   0    0             @const1489
+0     24   0    0             @const1490
+0    254   0    2   731  6.6  Debug_Ferro_Solda_1
+0     22   0    0             @const1494
+0     24   0    0             @const1496
+0     24   0    0             @const1497
+0      4   0    0             @const1498
+0      4   0    0             @const1499
+0    254   0    2   731  6.6  Debug_Ferro_Solda_2
+0     22   0    0             @const1503
+0     24   0    0             @const1505
+0     24   0    0             @const1506
+0      4   0    0             @const1507
+0      4   0    0             @const1508
+0     22   0    0             @const1511
+0     22   0    0             @const1512
+0     22   0    0             @const1513
+0     22   0    0             @const1514
+0     20   0    0             @const1515
+0     20   0    0             @const1516
+0     22   0    0             @const1517
+0     22   0    0             @const1518
+0     20   0    0             @const1519
+0     18   0    0             @const1520
+0     18   0    0             @const1521
+0     22   0    0             @const1522
+0     20   0    0             @const1523
+0     18   0    0             @const1524
+0     22   0    0             @const1525
+0     20   0    0             @const1526
+0     22   0    0             @const1527
+0     20   0    0             @const1528
+0     22   0    0             @const1529
+0     22   0    0             @const1530
+0     22   0    0             @const1531
+0     22   0    0             @const1532
+0     22   0    0             @const1533
+0     20   0    0             @const1534
+0     22   0    0             @const1535
+0    202   0    4   594  4.4  Debug_Sensores
+0     20   0    0             @const1541
+0     74   0    2             @PRINTF_X_1175
+0    386   0    9  1504  7.2  Debug_saidas
+0     18   0    0             @const1556
+0    382   0    2  1564  6.8  Debug_posicoes_outra_maquina
+0     20   0    0             @const1562
+0     20   0    0             @const1563
+0     22   0    0             @const1564
+0     22   0    0             @const1565
+0     22   0    0             @const1566
+0     22   0    0             @const1567
+0     22   0    0             @const1568
+0     22   0    0             @const1569
+0     22   0    0             @const1570
+0     22   0    0             @const1571
+0     22   0    0             @const1572
+0     22   0    0             @const1573
+0     22   0    0             @const1574
+0     22   0    0             @const1575
+0     22   0    0             @const1576
+0     22   0    0             @const1577
+0     22   0    0             @const1578
+0     22   0    0             @const1579
+0   1048   1    3  4656  7.4  envia_posicoes
+0     22   0    0             @const1584
+0     22   0    0             @const1585
+0     22   0    0             @const1586
+0     22   0    0             @const1587
+0     22   0    0             @const1589
+0     22   0    0             @const1590
+0     22   0    0             @const1592
+0     22   0    0             @const1593
+0     22   0    0             @const1595
+0     22   0    0             @const1596
+0     22   0    0             @const1598
+0     22   0    0             @const1599
+0     22   0    0             @const1601
+0     22   0    0             @const1602
+0     22   0    0             @const1604
+0     22   0    0             @const1605
+0     22   0    0             @const1607
+0     22   0    0             @const1608
+0     22   0    0             @const1610
+0     22   0    0             @const1611
+0     22   0    0             @const1613
+0     22   0    0             @const1614
+0     22   0    0             @const1615
+0     22   0    0             @const1616
+0    102   0    1   295  2.3  Tela_Inicial
+0     24   0    0             @const1619
+0     24   0    0             @const1620
+0     24   0    0             @const1621
+0     44   0    3             @DIV88
+0    124   0    2             @PRINTF_U_1175
+0     90   0    4   354  4.5  atualiza_pontos
+0      4   0    0             @const1641
+0      4   0    0             @const1642
+0      4   0    0             @const1643
+0     10   0    0             @const1644
+0     10   0    0             @const1645
+0     10   0    0             @const1646
+0     62   0    0   147  1.8  display_edita_ponto
+0     24   0    0             @const1649
+0     24   0    0             @const1650
+0     24   0    0             @const1651
+0     24   0    0             @const1652
+0     62   0    0   147  1.8  display_menu_edita_pontos
+0     24   0    0             @const1655
+0     24   0    0             @const1656
+0     24   0    0             @const1657
+0     24   0    0             @const1658
+0    236   0    6   613  4.2  checa_limites
+0    124   0    5   490  5.6  aciona_alimentador_solda
+0    420   0    3   777  3.8  solda_mola
+0    420   0    3   777  3.8  solda_mola_2
+0   1624   2    6  6230  9.5  edita_ponto
+0     14   0    0             @const1691
+0      8   0    0             @const1692
+0      8   0    0             @const1693
+0     20   0    0             @const1694
+0   1128   1    8  4541 10.1  menu_edita_pontos
+0     24   0    0             @const1704
+0     24   0    0             @const1705
+0     24   0    0             @const1706
+0     24   0    0             @const1707
+0     22   0    0             @const1708
+0     20   0    0             @const1709
+0     24   0    0             @const1711
+0     24   0    0             @const1712
+0     24   0    0             @const1713
+0     24   0    0             @const1714
+0      4   0    0             @const1715
+0      4   0    0             @const1716
+0      4   0    0             @const1717
+0      4   0    0             @const1718
+0      4   0    0             @const1719
+0      4   0    0             @const1720
+0     24   0    0             @const1722
+0     24   0    0             @const1723
+0     24   0    0             @const1725
+0     24   0    0             @const1726
+0    400   0    3  1685  6.9  manutencao_opcoes
+0     24   0    0             @const1731
+0     24   0    0             @const1732
+0     24   0    0             @const1733
+0     24   0    0             @const1734
+0     24   0    0             @const1735
+0     24   0    0             @const1736
+0     24   0    0             @const1737
+0     24   0    0             @const1738
+0     24   0    0             @const1739
+0     24   0    0             @const1740
+0     24   0    0             @const1741
+0     24   0    0             @const1742
+0     24   0    0             @const1743
+0     24   0    0             @const1744
+0     24   0    0             @const1745
+0     24   0    0             @const1746
+0     24   0    0             @const1747
+0     24   0    0             @const1748
+0      4   0    0             @const1749
+0    184   0    2   901  4.9  seleciona_manutencao
+0    354   0    4  1484  9.0  menu_manutencao
+0      4   0    0             @const1759
+0      4   0    0             @const1760
+0      4   0    0             @const1761
+0      4   0    0             @const1762
+0      4   0    0             @const1763
+0     64   0    0   149  1.7  tela_menu1
+0     24   0    0             @const1765
+0     24   0    0             @const1766
+0     24   0    0             @const1767
+0     20   0    0             @const1768
+0     84   0    1   328  5.4  menu1
+0    396   0    0  1564  4.3  atualiza_modelo
+0     10   0    0             @const1772
+0     10   0    0             @const1773
+0     10   0    0             @const1774
+0     10   0    0             @const1775
+0     10   0    0             @const1776
+0     10   0    0             @const1777
+0     10   0    0             @const1778
+0     10   0    0             @const1779
+0     10   0    0             @const1780
+0     10   0    0             @const1781
+0     10   0    0             @const1782
+0     10   0    0             @const1783
+0     10   0    0             @const1784
+0     10   0    0             @const1785
+0     10   0    0             @const1786
+0      8   0    0             @const1787
+0      8   0    0             @const1788
+0      8   0    0             @const1789
+0      8   0    0             @const1790
+0      8   0    0             @const1791
+0    278   0    2   791  8.0  check_keyboard
+0    134   0    3   195  3.3  le_bit
+0     66   0    6             @WRITEBITA
+0     50   0    5             @READBITA
+0     84   0    2   418  4.2  le_posicao_da_maquina2
+0     90   0    2   418  4.2  le_posicao_da_maquina1
+0     48   0    2   328  3.3  envia_posicao_para_maquina1
+0     48   0    2   328  3.3  envia_posicao_para_maquina2
+0     24   0    0             @const1815
+0     22   0    0             @const1816
+0    642   1    3  1968  4.9  posicao_alimentacao_placa
+0     24   0    0             @const1818
+0     22   0    0             @const1819
+0    772   1    3  2252  3.9  posicao_soldagem
+0     24   0    0             @const1821
+0     22   0    0             @const1822
+0   4050   4    3 13069  8.5  solda_placa_default
+0     24   0    0             @const1829
+0     24   0    0             @const1830
+0     24   0    0             @const1831
+0     22   0    0             @const1832
+0    124   0    4   275  2.4  soldar
+0     24   0    0             @const1841
+0     24   0    0             @const1842
+0     24   0    0             @const1843
+0     22   0    0             @const1844
+0    392   0    3  1104  4.4  posicao_home_2
+0     24   0    0             @const1848
+0     24   0    0             @const1849
+0     24   0    0             @const1850
+0     20   0    0             @const1851
+0    488   1    2  1354  5.8  posicao_dispensar_placa
+0     24   0    0             @const1854
+0     22   0    0             @const1855
+0    462   0    3  1304  5.4  posicao_home_3
+0    368   0    3  1085  4.4  posicao_home_1
+0     24   0    0             @const1862
+0     20   0    0             @const1863
+0    206   0    6   606  5.5  aciona_dedos_entrada
+0     24   0    0             @const1868
+0     22   0    0             @const1869
+0    272   0    6   663  5.5  acionar_alimentador_placa
+0     24   0    0             @const1874
+0     22   0    0             @const1875
+0     92   0    1    96  2.1  desaciona_mecanismo_de_entrada
+0     90   0    1    96  2.1  desaciona_mecanismo_de_saida
+0    140   0    6   384  5.5  acionar_pressor
+0     24   0    0             @const1881
+0     22   0    0             @const1882
+0    152   0    6   384  5.5  desaciona_pressor
+0     22   0    0             @const1887
+0     22   0    0             @const1888
+0    206   0    6   577  5.5  aciona_dedos_saida
+0     24   0    0             @const1893
+0     22   0    0             @const1894
+0    218   0    6   577  5.5  desaciona_dedos_saida
+0     22   0    0             @const1899
+0     20   0    0             @const1900
+0    268   0    6   663  5.5  aciona_dispensador_placa
+0     24   0    0             @const1905
+0     22   0    0             @const1906
+0    520   1    4  2351  6.9  checa_farol_1
+0     22   0    0             @const1909
+0     20   0    0             @const1910
+0     22   0    0             @const1911
+0     20   0    0             @const1912
+0     22   0    0             @const1913
+0     20   0    0             @const1914
+0     22   0    0             @const1915
+0     20   0    0             @const1916
+0     22   0    0             @const1917
+0     20   0    0             @const1918
+0     22   0    0             @const1919
+0     20   0    0             @const1920
+0     22   0    0             @const1921
+0     24   0    0             @const1922
+0    190   0    4  1074  6.5  checa_farol_2
+0    144   0    6   297  5.2  dispensador_home
+0    154   0    6   341  5.2  alimentador_home
+0    320   0    4  1210  7.3  home_maquina_1
+0     22   0    0             @const1937
+0     20   0    0             @const1938
+0    206   0    1   688  5.6  home_maquina_2
+0     22   0    0             @const1939
+0     20   0    0             @const1940
+0   1084   1    1  4943  5.9  erro_rot
+0     22   0    0             @const1942
+0     22   0    0             @const1943
+0     22   0    0             @const1944
+0     22   0    0             @const1945
+0     22   0    0             @const1946
+0     22   0    0             @const1947
+0     22   0    0             @const1948
+0     22   0    0             @const1949
+0     22   0    0             @const1950
+0     22   0    0             @const1951
+0     22   0    0             @const1952
+0     22   0    0             @const1953
+0     22   0    0             @const1954
+0     22   0    0             @const1955
+0     22   0    0             @const1956
+0     24   0    0             @const1957
+0     22   0    0             @const1958
+0     22   0    0             @const1959
+0     22   0    0             @const1960
+0     22   0    0             @const1961
+0     22   0    0             @const1962
+0     22   0    0             @const1963
+0     22   0    0             @const1964
+0     22   0    0             @const1965
+0     22   0    0             @const1966
+0     22   0    0             @const1967
+0     22   0    0             @const1968
+0     22   0    0             @const1969
+0     22   0    0             @const1970
+0     22   0    0             @const1971
+0     22   0    0             @const1972
+0     22   0    0             @const1973
+0     22   0    0             @const1974
+0     22   0    0             @const1975
+0     22   0    0             @const1976
+0     22   0    0             @const1977
+0     22   0    0             @const1978
+0     22   0    0             @const1979
+0     22   0    0             @const1980
+0     22   0    0             @const1981
+0     22   0    0             @const1982
+0     22   0    0             @const1983
+0     22   0    0             @const1984
+0     22   0    0             @const1985
+0     22   0    0             @const1986
+0     22   0    0             @const1987
+0     22   0    0             @const1988
+0     22   0    0             @const1989
+0     22   0    0             @const1990
+0     22   0    0             @const1991
+0     22   0    0             @const1992
+0     24   0    0             @const1993
+0     24   0    0             @const1994
+0     24   0    0             @const1995
+0     24   0    0             @const1996
+0     24   0    0             @const1997
+0     24   0    0             @const1998
+0     24   0    0             @const1999
+0     24   0    0             @const2000
+0     24   0    0             @const2001
+0     24   0    0             @const2002
+0     24   0    0             @const2003
+0     24   0    0             @const2004
+0     22   0    0             @const2005
+0     22   0    0             @const2006
+0     22   0    0             @const2007
+0     24   0    0             @const2008
+0    398   0    2   900  3.9  coloca_maquina_em_home_1
+0     36   0    1   185  3.6  LIGA_ESTEIRA
+0    468   1    2  1952  7.8  maquina_estados1
+0    448   0    2  1769  7.8  maquina_estados2
+0    310   0    1  1039  4.3  maquina_1
+0     24   0    0             @const2013
+0    400   0    1  1621  7.3  maquina_2
+0     24   0    0             @const2015
+0     24   0    0             @const2016
+0     82   0    1   238  4.1  trata_timer0
+0      8   0    0    22  1.2  trata_timer1
+0      8   0    0    22  1.2  trata_timer3
+0     56   0    1   143  3.8  ext_int1
+0    112   0    2   207  2.7  pega_label_eeprom
+0    306   0    9   900  4.8  pega_data_eeprom
+0    270   0   10   925  4.4  grava_coordenada_na_eeprom
+0    150   0    2   163  3.5  inicializa_interna_eeprom
+0    956   1  139  2325  8.1  salva_valores_debug_solda
+0   1824   2    2  4667  7.6  MAIN
+0     22   0    0             @const2049
+0     22   0    0             @const2050
+0     22   0    0             @const2052
+0     22   0    0             @const2053
+0     22   0    0             @const2054
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               138
+    Statements              4529
+    Comments                1505
+    Volume (V)              251137
+    Difficulty (D)          620.1
+    Effort to implement (E) 155731729
+    Time to implement (T)   2403 hours, 16 minutes
+    Est Delivered Bugs (B)  96
+    Cyclomatic Complexity   664
+    Maintainability (MI)    28
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B8   178  0  
+000BA-0FFFE  46542  18808  
+
+
+

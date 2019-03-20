@@ -1,0 +1,20 @@
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 205(11,21): Variable never used:   flag_start
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 206(11,25): Variable never used:   flag_bandeija1
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 207(11,25): Variable never used:   flag_bandeija2
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 1150(17,29): Variable never used:   steps_faltam
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 1355(17,29): Variable never used:   steps_faltam
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 2035(9,23): Variable never used:   posicao_cursor
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 2929(5,6): Variable never used:   i
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 2959(9,23): Variable never used:   data_sensores2
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 2960(5,6): Variable never used:   i
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3364(19,24): Variable never used:   valor
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3365(15,19): Variable never used:   step
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3366(11,17): Variable never used:   result
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3367(15,17): Variable never used:   aa
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3368(15,24): Variable never used:   posicao_x
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3369(15,24): Variable never used:   posicao_y
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3370(15,27): Variable never used:   posicao_flip
+>>> Warning 202 "Cpu_robot_soldagem.c" Line 3371(11,16): Variable never used:   ponto
+      Memory usage:   ROM=18%      RAM=19% - 20%
+      0 Errors,  17 Warnings.
+Build Successful.

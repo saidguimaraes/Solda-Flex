@@ -1,0 +1,48 @@
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pcf8574.c" Line 9(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pcf8574.c" Line 15(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pcf8574.c" Line 23(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pcf8574.c" Line 29(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pcf8574.c" Line 38(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pcf8574.c" Line 45(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pca9555.c" Line 6(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pca9555.c" Line 16(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pca9555.c" Line 26(1,1): Code has no effect
+>>> Warning 207 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\pca9555.c" Line 38(1,1): Code has no effect
+>>> Warning 205 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 124(1,1): Unsigned variable is never less than zero
+>>> Warning 204 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 124(1,1): Condition always FALSE
+>>> Warning 203 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 675(1,1): Condition always TRUE
+>>> Warning 203 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 760(1,1): Condition always TRUE
+>>> Warning 203 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 823(1,1): Condition always TRUE
+>>> Warning 208 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 641(6,12): Function not void and does not return a value  soldar
+>>> Warning 208 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\main.h" Line 152(5,18): Function not void and does not return a value  checa_farol_1
+>>> Warning 208 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 1234(5,18): Function not void and does not return a value  checa_farol_2
+>>> Warning 203 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 1761(1,1): Condition always TRUE
+>>> Warning 203 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 2052(1,1): Condition always TRUE
+>>> Warning 203 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 2133(1,1): Condition always TRUE
+>>> Warning 216 "main.c" Line 517(2,3): Interrupts disabled during call to prevent re-entrancy:  (@I2C_WRITEU_1)
+>>> Warning 216 "main.c" Line 517(2,3): Interrupts disabled during call to prevent re-entrancy:  (escreve_PCA9555)
+>>> Warning 216 "main.c" Line 517(2,3): Interrupts disabled during call to prevent re-entrancy:  (desaciona_saida)
+>>> Warning 216 "main.c" Line 517(2,3): Interrupts disabled during call to prevent re-entrancy:  (@delay_us1)
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\main.h" Line 138(11,26): Variable never used:   z_soldar_home_2
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\main.h" Line 141(11,24): Variable never used:   tipo_soldagem
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\main.h" Line 142(11,26): Variable never used:   tipo_soldagem_2
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\movimentos.c" Line 316(14,22): Variable never used:   time_out
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\movimentos.c" Line 317(18,30): Variable never used:   time_out_max
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\movimentos.c" Line 519(14,22): Variable never used:   time_out
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\movimentos.c" Line 520(18,30): Variable never used:   time_out_max
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\movimentos.c" Line 727(10,18): Variable never used:   time_out
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\movimentos.c" Line 728(18,30): Variable never used:   time_out_max
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 45(5,12): Variable never used:   n_ponto
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 230(14,16): Variable never used:   ix
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 438(10,14): Variable never used:   erro
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 741(9,26): Variable never used:   numero_max_linhas
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 743(5,6): Variable never used:   i
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 744(5,12): Variable never used:   n_ponto
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\menus_solda_automatica.c" Line 745(9,13): Variable never used:   erro
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 4(6,22): Variable never used:   posicao_maquina2
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 643(11,19): Variable never used:   n_pontos
+>>> Warning 202 "C:\Users\Artur_azevedo\Documents\Projetos_ICTS\ROBÔ_SOLDAGEM\CPU\SOFTWARE\maquinas.c" Line 644(9,10): Variable never used:   i
+>>> Warning 202 "main.c" Line 279(15,34): Variable never used:   placa1_deslocamento
+      Memory usage:   ROM=71%      RAM=10% - 14%
+      0 Errors,  45 Warnings.
+Build Successful.
